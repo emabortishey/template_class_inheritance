@@ -34,7 +34,9 @@ public:
 	void set_val3(T3 val3_P) { val3 = val3_P; }
 	void set_val4(T4 val4_P) { val4 = val4_P; }
 
-	void print() { cout << val3 << '\t' << val4 << '\t'; }
+	void print()
+	{   base::print();
+		cout << val3 << '\t' << val4 << '\t'; }
 
 	const T3 get_val3() { return val3; }
 	const T4 get_val4() { return val4; }
@@ -54,7 +56,9 @@ public:
 	void set_val5(T5 val5_P) { val5 = val5_P; }
 	void set_val6(T6 val6_P) { val6 = val6_P; }
 
-	void print() { cout << val5 << '\t' << val6 << '\t'; }
+	void print()
+	{   child1::print();
+		cout << val5 << '\t' << val6 << '\t'; }
 
 	const T5 get_val5() { return val5; }
 	const T6 get_val6() { return val6; }

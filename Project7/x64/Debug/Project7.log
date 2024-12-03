@@ -1,4 +1,39 @@
 ﻿  child2.cpp
   Source.cpp
+C:\Users\fartb\source\repos\Project7\child2.h(54,107): error C2512: child1<T1,T2,T3,T4>: нет подходящего конструктора по умолчанию
+C:\Users\fartb\source\repos\Project7\child2.h(54,107): error C2512:         with
+C:\Users\fartb\source\repos\Project7\child2.h(54,107): error C2512:         [
+C:\Users\fartb\source\repos\Project7\child2.h(54,107): error C2512:             T1=int,
+C:\Users\fartb\source\repos\Project7\child2.h(54,107): error C2512:             T2=int,
+C:\Users\fartb\source\repos\Project7\child2.h(54,107): error C2512:             T3=char,
+C:\Users\fartb\source\repos\Project7\child2.h(54,107): error C2512:             T4=char
+C:\Users\fartb\source\repos\Project7\child2.h(54,107): error C2512:         ]
+  (компиляция исходного файла "Source.cpp")
+      C:\Users\fartb\source\repos\Project7\child2.h(25,7):
+       см. объявление "child1<T1,T2,T3,T4>"
+          with
+          [
+              T1=int,
+              T2=int,
+              T3=char,
+              T4=char
+          ]
+      C:\Users\fartb\source\repos\Project7\child2.h(54,107):
+      контекст создания экземпляра шаблона (сначала самый старый)
+          C:\Users\fartb\source\repos\Project7\Source.cpp(7,47):
+          выполняется компиляция ссылки на экземпляр класс шаблон функции "child2<int,int,char,char,double,double>"
+          C:\Users\fartb\source\repos\Project7\child2.h(54,2):
+          во время компиляции функции-члена класс шаблон "child2<int,int,char,char,double,double>::child2(T1,T2,T3,T4,T5,T6)"
+          with
+          [
+              T1=int,
+              T2=int,
+              T3=char,
+              T4=char,
+              T5=double,
+              T6=double
+          ]
+              C:\Users\fartb\source\repos\Project7\Source.cpp(7,50):
+              см. первую ссылку на "child2<int,int,char,char,double,double>::child2" в "main"
+  
   Создание кода...
-  Project7.vcxproj -> C:\Users\fartb\source\repos\Project7\x64\Debug\Project7.exe
